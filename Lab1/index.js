@@ -1,3 +1,4 @@
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -7,7 +8,6 @@ const options = {
 };
 
 const searchInput = document.getElementById("search-input");
-
 const locations = document.querySelector(".country");
 const deaths = document.querySelector(".deaths");
 const confirmed = document.querySelector(".confirmed");
@@ -15,6 +15,10 @@ const recovered = document.querySelector(".recovered");
 
 
 searchInput.addEventListener("change", (event) => {
+    locations.innerHTML = 'Loading..';
+    deaths.innerHTML = 'Loading..';
+    confirmed.innerHTML = 'Loading..';
+    recovered.innerHTML = 'Loading..';
     console.log(event.target.value)
     fetch(`https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total?country=${event.target.value}`,options)
         .then(async function(response) {
