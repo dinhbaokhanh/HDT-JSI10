@@ -18,7 +18,7 @@ searchInput.addEventListener("change", (event) => {
     locations.innerHTML = 'Loading..';
     deaths.innerHTML = 'Loading..';
     confirmed.innerHTML = 'Loading..';
-    recovered.innerHTML = 'Loading..';
+    // recovered.innerHTML = 'Loading..';
     console.log(event.target.value)
     fetch(`https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total?country=${event.target.value}`,options)
         .then(async function(response) {
@@ -27,6 +27,6 @@ searchInput.addEventListener("change", (event) => {
             locations.innerHTML = info.data.location ;
             deaths.innerHTML = info.data.deaths ;
             confirmed.innerHTML = info.data.confirmed ;
-            recovered.innerHTML = info.data.recovered ;
+            // recovered.innerHTML = info.data.recovered ;
         })
 })
