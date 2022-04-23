@@ -19,26 +19,26 @@
 // const new_arr = connector.filter(item => !valuesToRemove.includes(item));
 // console.log(new_arr);
 
-// B4
-players = [
-    { id: 11, name: 'Messi', age: 33 },        
-    { id: 12, name: 'Ronaldo', age: 34 },      
-    { id: 13, name: 'Young', age: 35 },        
-    { id: 14, name: 'Mane', age: 21 },          
-    { id: 15, name: 'Salah', age: 24 },
-]
-    //C1
+// // B4
+// players = [
+//     { id: 11, name: 'Messi', age: 33 },        
+//     { id: 12, name: 'Ronaldo', age: 34 },      
+//     { id: 13, name: 'Young', age: 35 },        
+//     { id: 14, name: 'Mane', age: 21 },          
+//     { id: 15, name: 'Salah', age: 24 },
+// ]
+//     //C1
 
 
-//     // C2   
-// const convertArrayToObject = (array, key) => {
-//     const initialValue = {};
-//     return array.reduce((obj, item) => {
-//       return {
-//         ...obj,
-//         [item[key]]: item,
-//       };
-//     }, initialValue);
-// }
-// const playersModified = convertArrayToObject(players, 'id');
+// //     // C2   
+// // const convertArrayToObject = (array, key) => {
+// //     const initialValue = {};
+// //     return array.reduce((obj, item) => {
+// //       return {
+// //         ...obj,
+// //         [item[key]]: item,
+// //       };
+// //     }, initialValue);
+// // }
+// // const playersModified = convertArrayToObject(players, 'id');
 
