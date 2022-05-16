@@ -1,4 +1,4 @@
-// //B1
+//B1
 // arr1 = [1,2,4,5,6];
 // arr2 = [1,6,8,9,0];
 // arr1 = arr1.filter(val => arr2.includes(val));
@@ -42,3 +42,17 @@
 // // }
 // // const playersModified = convertArrayToObject(players, 'id');
 
+
+
+// Split
+// let chuoi = "1,2,3,4,5,6,7,8,9,10";
+// let chuoiSplit = chuoi.split(",")
+// console.log("chuoiSplit: ", chuoiSplit)
+
+// for (let key of chuoiSplit){
+//     key = Number(key)
+//     console.log(key)
+//     if(key % 2 == 0) {
+//         console.log(key)
+//     }
+// }

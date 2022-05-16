@@ -130,3 +130,7 @@
 
 // console.log(arr3);// 5, 6, 10
 
+// let a1 = ['hello','hi',100,'xin chao','no no']
+
+// let a3 = ai.splce(1,4)
+// console.log('a3: ',a3)
