@@ -14,6 +14,7 @@ controller.register = (data) => {
         document.getElementById('password-error').innerText = "*Please input password";
     }
     
+    
 }
 
 
@@ -24,4 +25,5 @@ controller.login = (data) => {
     if(data.password.trim() === ""){
         document.getElementById('password-error').innerText = "*Please input password";
     }
+    
 }
