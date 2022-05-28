@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/register.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
 
 
-  <div class="register-container">
+  <div class="login-container">
 
     <!-- Bên phải -->
     <div class="aside-right">
@@ -22,24 +22,28 @@
         <h3>MindX Chat</h3>
       </div>
 
-      <form id="register-form">
+      <form id="login-form">
 
 
+        <!-- Hàng 2 -->
         <div class="input-wrapper">
-          <input type="email" placeholder="Email..." oninvalid="caution();" required>
+          <input type="email" name="email" placeholder="Email..." >
+          <div class="error" id="email-error"></div>
         </div>
 
-        <div class="caution">*Please fill out the email</div>
-
+        <!-- Hàng 3 -->
         <div class="input-wrapper">
-          <input type="password" placeholder="Password..." oninvalid="caution();" required>
+          <input type="password" name="password" placeholder="Password..." >
+          <div class="error" id="password-error"></div>
         </div>
-        <div class="caution">*Please fill out the password</div>
+
 
         <div class="form-action">
-          <span class="cursor">Don't have an account? <a href="./register.html">Register</a></span>
+          <span>Don't have an account? <a href="./register.html">Register</a> here</span>
+          <br><br>
           <button class="btn" type="submit">Login</button>
         </div>
+
 
       </form>
 
@@ -57,6 +61,8 @@
   </div>
 
 
+  <script src="../js/login.js"></script>
+  <script src="../js/controller.js"></script>
 
 </body>
 
