@@ -17,13 +17,13 @@ registerForm.addEventListener("submit", function (event) {
 
     const register = async (data) => {
         try {
-        await firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
-        firebase.auth().currentUser.sendEmailVerification();
-        alert("The email has been registered, please check your email");
+            await firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+            firebase.auth().currentUser.sendEmailVerification();
+            alert("The email has been registered, please check your email");
         }
         catch (err) {
-        console.log(err);
-        alert(err.message);
+            console.log(err);
+            alert(err.message);
         }
     }
 

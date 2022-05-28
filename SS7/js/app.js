@@ -16,8 +16,8 @@ const init = () => {
     };
 
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig)
-    console.log(firebase.app().name)
+    firebase.initializeApp(firebaseConfig);
+    console.log(firebase.app().name);
 
 }
 
