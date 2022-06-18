@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="shortcut icon" 
+        href="../img/LOGO.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="topnav">
+
+        <nav>
+
+            <div class="max-width">
+
+                <div class="logo">
+                    <img src="../img/LOGO.png" id="logo-image" alt="">
+                </div>
+
+                <div class="input-bar">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon" onclick="SearchEngine()"></i>
+                </div>
+
+                <ul class="menu-bar">
+                    <li><a href="../landscape.html">Home</a></li>
+                    <li><a href="./food.html">Food</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="user">
+                    <i class="account far fa-user fa-2x"></i>
+                    <i id="cart" class="fas fa-shopping-basket fa-2x"></i>   
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <div id="empty-cart">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><p id="if-empty"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+                <div id="modal-content">                        
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                                
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"></span>
+                            <span class="cart-price cart-header cart-column"></span>
+                            <span class="cart-quantity cart-header cart-column"></span>
+                        </div>
+
+                        <div class="cart-items">
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="brown-bar"></div>
+
+    </div>
+
+    <br><br><br>
+
+
+    <div class="wrapper">
+
+        <div class="filter">
+
+            <div class="filter_main"><p>Groups:</p></div>
+
+            <div class="groups">
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Foods" onchange="change()"> <span>Foods</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Drinks" onchange="change()"> <span>Drinks</span> </label>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="filter_main"><p>Categories:</p></div>
+
+            <div class="categories">
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Rice" onchange="change()" id="check-rice" > <span>Rice</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Vegetarians" onchange="change()" id="check-vegetarian" > <span>Vegetarians</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Pho/Bun" onchange="change()" id="check-pho/bun" > <span>Pho/Bun</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Seafoods" onchange="change()" id="check-seafood" > <span>Seafoods</span> </label>
+                </div>
+
+                <div class="checkbox final-box">
+                    <label><input type="checkbox" rel="Street" onchange="change()" id="check-street" > <span>Street Foods</span> </label>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="goods">
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="place-img" src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="Avatar">
+                <div class="container">
+                    <h4>Phở Ngọc Vượng - Nguyễn Chánh</h4>
+                    <p>94 Nguyễn Chánh, P. Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+<script src="../js/menu.js"></script>
+
+</body>
+</html>
