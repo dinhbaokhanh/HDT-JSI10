@@ -98,7 +98,7 @@ nav .menu-bar li a {
     border-radius: 4px;
 }
 
-.topnav nav .user {
+.topnav nav #user {
     display: flex;
     align-items: center;
     padding: 0px 20px;
