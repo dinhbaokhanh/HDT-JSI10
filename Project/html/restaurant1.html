@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vietnam-cuisine/pho-ngoc-vuong-nguyen-chanh</title>
+    <link rel="shortcut icon" 
+        href="../img/LOGO.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="../css/restautant.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="topnav">
+
+        <nav>
+
+            <div class="max-width">
+
+                <div class="logo">
+                    <img src="../img/LOGO.png" id="logo-image" alt="">
+                </div>
+
+                <ul class="menu-bar">
+                    <li><a href="../landscape.html">Home</a></li>
+                    <li><a href="./food.html">Food</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div id="user">
+                    <i class="account far fa-user fa-2x"></i>
+                    <i id="cart" class="fas fa-shopping-basket fa-2x"></i>   
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <div id="empty-cart">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><p id="if-empty"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+                <div id="modal-content">                        
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                                
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"></span>
+                            <span class="cart-price cart-header cart-column"></span>
+                            <span class="cart-quantity cart-header cart-column"></span>
+                        </div>
+
+                        <div class="cart-items">
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="brown-bar"></div>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="opening">
+
+        <div class="restaurant-image">
+            <img src="../img/foody-upload-api-foody-mobile-ngoc-vuong-jpg-180419140611.jpg" alt="">
+        </div>
+
+        <div class="restaurant-info">
+            <p class="title">Phở Ngọc Vượng - Nguyễn Chánh</p>
+            <div class="brown-bar"></div>
+            <p class="address">94 Nguyễn Chánh, Trung Hòa, Cầu Giấy, Hà Nội</p>
+            <p class="time">Opening time: 6h30 - 10h00</p>
+            <p class="price">Price: 50,000 - 60,000 (VND)</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="menu-title"><h2>Menu</h2></div>
+
+    <div class="wrapper">
+
+        <div class="categories">
+
+            <div class="checkbox">
+                <label><input type="checkbox" rel="Rice" onchange="change()" id="check-rice" > <span>Rice</span> </label>
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox" rel="Pho/Bun" onchange="change()" id="check-pho/bun" > <span>Pho/Bun</span> </label>
+            </div>
+
+            <div class="checkbox final-box">
+                <label><input type="checkbox" rel="Drinks" onchange="change()" id="check-drinks" > <span>Drinks</span> </label>
+            </div>
+
+        </div>
+            
+
+
+        
+
+        <div class="menu">
+
+            <div class="input-bar">
+                <input id="search-input" type="text" placeholder="Search...">
+                <i class="fas fa-search search-icon" onclick="SearchEngine()"></i>
+            </div>
+
+            <br><br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/2018528191540-pho-tai-chin.jpg" alt=""></div>
+                    <div class="food-name">Phở tái chín</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+            
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/201852819833-pho-bo-tai.jpg" alt=""></div>
+                    <div class="food-name">Phở bò tái</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+            
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/426337c4-phở tái lăn.jpeg" alt=""></div>
+                    <div class="food-name">Phở tái lăn</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+            
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/46b62192-pho-tai.jpeg" alt=""></div>
+                    <div class="food-name">Phở tái</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+            
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/2018528192016-com-rang-thap-cam.jpg" alt=""></div>
+                    <div class="food-name">Cơm rang thập cẩm</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/201852819141-com-rang-dưa-bo.jpg" alt=""></div>
+                    <div class="food-name">Cơm rang dưa bò</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/bohuc.jpeg" alt=""></div>
+                    <div class="food-name">Bò húc lon</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+
+            <br>
+            
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/coca.jpeg" alt=""></div>
+                    <div class="food-name">Coca lon</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+
+            <br>
+
+            <div class="food">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/nuockhoang.jpeg" alt=""></div>
+                    <div class="food-name">Nước khoáng chai</div> 
+                </div>
+                <div class="button-increase"><i class="fa-solid fa-cart-arrow-down"></i></div>
+            </div>
+
+            <br>
+
+
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="toTop">^</button>
+
+    <div class="footer">
+        <p>Copyright © 2022, all rights reserved. No parts of this site may be reprodiced without our written permission.</p>
+        <br>
+        <p> This project was made by Dinh Bao Khanh from HDT-JSI10</p>
+    </div>
+
+<script src="../js/restaurant.js"></script>
+<script src="https://kit.fontawesome.com/1d5a89c1e8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
