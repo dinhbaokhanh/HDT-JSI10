@@ -82,7 +82,7 @@ function getClassOfCheckedCheckboxes(checkboxes) {
 }
   
 function filterResults(filters) {
-    var rElems = document.querySelectorAll(".goods .items");
+    var rElems = document.querySelectorAll(".menu .food");
     var hiddenElems = [];
   
     if (!rElems || rElems.length <= 0) {
@@ -91,24 +91,7 @@ function filterResults(filters) {
   
     for (var i = 0; i < rElems.length; i++) {
       var el = rElems[i];
-  
-        if (filters.groups.length > 0) {
-            var isHidden = true;
-  
-            for (var j = 0; j < filters.groups.length; j++) {
-                var filter = filters.groups[j];
-  
-                if (el.classList.contains(filter)) {
-                    isHidden = false;
-                    break;
-                }
-            }
-  
-            if (isHidden) {
-                hiddenElems.push(el);
-            }
-        }
-  
+
         if (filters.categories.length > 0) {
             var isHidden = true;
   
