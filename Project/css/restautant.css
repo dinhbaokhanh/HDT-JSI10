@@ -390,6 +390,7 @@ h2::after {
 .food {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .food-semi {
