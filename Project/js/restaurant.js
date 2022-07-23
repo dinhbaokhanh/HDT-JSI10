@@ -214,7 +214,7 @@ for (var i = 0; i < add_cart.length; i++) {
         var button = event.target;
         var product = button.parentElement.parentElement.parentElement;
         console.log(product)
-        var img = product.getElementsByClassName('food-image').item(0);
+        var img = product.getElementsByClassName('food-image')[0];
         console.log(img);
         var title = product.getElementsByClassName('food-name')[0].innerText;
         var price = product.getElementsByClassName('price')[0].innerText;
@@ -244,9 +244,9 @@ function addItemToCart(title, price, img , quantity) {
     
 
     var cartRowContents = `
-        <div class="cart-item cart-column">`
-        ${img}
-    `<span class="cart-item-title">${title}</span>
+        <div class="cart-item cart-column">
+            ${img}
+            <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
