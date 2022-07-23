@@ -224,7 +224,7 @@ for (var i = 0; i < add_cart.length; i++) {
 }
 
 
-function addItemToCart(big_title, title, price, img, quantity) {
+function addItemToCart(title, price, img, quantity) {
     var cartRow = document.createElement('div') 
 
     cartRow.classList.add('cart-row')
