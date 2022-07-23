@@ -6,6 +6,11 @@ document.getElementById("user").addEventListener("click", function () {
     window.location.href = '../html/logIn.html'
 })
 
+document.getElementById("res1").addEventListener("click", function () {
+    window.location.href = '../html/restaurant1.html'
+})
+
+
 // Modal
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("cart");
