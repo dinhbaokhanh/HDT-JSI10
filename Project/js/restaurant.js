@@ -165,7 +165,7 @@ function updatecart() {
         var quantity = quantity_item.value
         total = total + (price * quantity)
     }
-    document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+    document.getElementsByClassName("cart-total-price")[0].innerText = total + ',000' + ' VNĐ'
 
 }
   
@@ -214,7 +214,7 @@ for (var i = 0; i < add_cart.length; i++) {
         var button = event.target;
         var product = button.parentElement.parentElement.parentElement;
         console.log(product)
-        var img = product.getElementsByClassName('food-image')[0];
+        var img = product.getElementsByClassName('food-image')[0].firstChild.src;
         console.log(img);
         var title = product.getElementsByClassName('food-name')[0].innerText;
         var price = product.getElementsByClassName('price')[0].innerText;
@@ -245,7 +245,7 @@ function addItemToCart(title, price, img , quantity) {
 
     var cartRowContents = `
         <div class="cart-item cart-column">
-            ${img}
+        <img class="cart-item-image" src="${img}" width="80" height="80">
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
