@@ -5,3 +5,4 @@ document.getElementById("logo-image").addEventListener("click", function () {
 document.getElementById("user").addEventListener("click", function () {
     window.location.href = '../html/logIn.html'
 })
+

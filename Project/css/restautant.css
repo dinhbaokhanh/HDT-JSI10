@@ -443,6 +443,9 @@ h2::after {
     background-color: #555; 
 }
 
+.cart-item-title {
+    font-size: 20px;
+}
 
 .footer {
     margin-top: 100px;
