@@ -10,6 +10,31 @@ document.getElementById("res1").addEventListener("click", function () {
     window.location.href = '../html/restaurant1.html'
 })
 
+document.getElementById("res2").addEventListener("click", function () {
+    window.location.href = '../html/restaurant2.html'
+})
+
+document.getElementById("res3").addEventListener("click", function () {
+    window.location.href = '../html/restaurant3.html'
+})
+
+function SearchEngine() {
+    var input, filter, card, card_name, i, txtValue;
+    input = document.getElementById('search-input');
+    filter = input.value.toLowerCase();
+    card = document.getElementsByClassName('card');
+  
+    for (i = 0; i < card.length; i++) {
+        card_name = card[i].getElementsByClassName('card-name')[0];
+        console.log(card_name)
+        txtValue = card_name.textContent || card_name.innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            card[i].style.display = "";
+        } else {
+            card[i].style.display = "none";
+        }
+    }
+}
 
 // Modal
 var modal = document.getElementById("myModal");

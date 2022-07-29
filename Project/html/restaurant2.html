@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vietnam-cuisine/hung-coi-bun-bo-hue</title>
+    <link rel="shortcut icon" 
+        href="../img/LOGO.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="../css/restautant.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="topnav">
+
+        <nav>
+
+            <div class="max-width">
+
+                <div class="logo">
+                    <img src="../img/LOGO.png" id="logo-image" alt="">
+                </div>
+
+                <ul class="menu-bar">
+                    <li><a href="../landscape.html">Home</a></li>
+                    <li><a href="./food.html">Food</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div id="user">
+                    <i id="account" class="account far fa-user fa-2x"></i>
+                    <i id="cart" class="fas fa-shopping-basket fa-2x"></i>   
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <div id="empty-cart">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><p id="if-empty"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+                <div id="modal-content">                        
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                                
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"></span>
+                            <span class="cart-price cart-header cart-column"></span>
+                            <span class="cart-quantity cart-header cart-column"></span>
+                        </div>
+
+                        <div class="cart-items">
+
+                        </div>
+                    
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="brown-bar"></div>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="opening">
+
+        <div class="restaurant-image">
+            <img src="../img/hưng còi bún bò huế/foody-upload-api-foody-mobile-30-hưng còi.jpg" alt="">
+        </div>
+
+        <div class="restaurant-info">
+            <p class="title">Hưng Còi - Bún Bò Huế - Mỹ Đình</p>
+            <div class="brown-bar"></div>
+            <p class="address">194 Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+            <p class="time">Opening time: 5h40 - 19h40</p>
+            <p class="price">Price: 40,000 - 60,000 (VND)</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="menu-title"><h2>Menu</h2></div>
+
+    <div class="wrapper">
+
+        <div class="categories">
+
+            <div class="checkbox">
+                <label><input type="checkbox" rel="Bun" onchange="change()" id="check-rice" > <span>Bún bò Huế</span> </label>
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox" rel="Extra" onchange="change()" id="check-pho/bun" > <span>Extra</span> </label>
+            </div>
+
+        </div>
+            
+
+
+
+
+        <div class="menu">
+
+            <div class="input-bar">
+                <input id="search-input" type="text" placeholder="Search...">
+                <i class="fas fa-search search-icon" onclick="SearchEngine()"></i>
+            </div>
+
+            <br><br>
+
+            <div class="food Bun">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/bunbohue.jpeg" alt=""></div>
+                    <div class="food-name">Bún bò Huế</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">43,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+            
+            
+
+            <div class="food Bun">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/bunbohuedacbiet.jpeg" alt=""></div>
+                    <div class="food-name">Bún bò Huế Đặc biệt</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">55,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+            
+            
+
+            <div class="food Bun">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/bungiomoc.jpeg" alt=""></div>
+                    <div class="food-name">Bún Giò Mọc</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">45,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+            
+            
+
+            <div class="food Extra">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/quay3.jpeg" alt=""></div>
+                    <div class="food-name">Quẩy 3</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">6,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+            
+            
+
+            <div class="food Extra">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/giola.jpeg" alt=""></div>
+                    <div class="food-name">1 Giò Lá</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">7,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+
+            
+
+            <div class="food Extra">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/tietluoc.jpeg" alt=""></div>
+                    <div class="food-name">Tiết Luộc</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">8,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+
+            
+
+            <div class="food Extra">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/bovien.jpeg" alt=""></div>
+                    <div class="food-name">4 Bò Viên</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">12,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+
+            
+            
+            <div class="food Drinks">
+                <div class="food-semi"> 
+                    <div class="food-image"><img src="../img/hưng còi bún bò huế/monggio.jpeg" alt=""></div>
+                    <div class="food-name">1 Móng Giò</div> 
+                </div>
+                <div class="food-semi-price">
+                    <div class="price">8,000đ</div>
+                    <div class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="toTop">^</button>
+
+    <div class="footer">
+        <p>Copyright © 2022, all rights reserved. No parts of this site may be reprodiced without our written permission.</p>
+        <br>
+        <p> This project was made by Dinh Bao Khanh from HDT-JSI10</p>
+    </div>
+
+<script src="../js/restaurant.js"></script>
+<script src="https://kit.fontawesome.com/1d5a89c1e8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
