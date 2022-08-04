@@ -276,4 +276,5 @@ const logout = () => {
     localStorage.removeItem("currentUser");
     localStorage.removeItem("cart");
     location.reload();
+    window.location.href = '../html/logIn.html'
 };
