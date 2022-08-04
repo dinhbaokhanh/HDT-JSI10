@@ -9,3 +9,9 @@ document.getElementById("food-shortcut").addEventListener("click", function () {
 document.getElementById("logo-image").addEventListener("click", function () {
     window.location.href = './landscape.html'
 })
+
+const logout = () => {
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("cart");
+    location.reload();
+};

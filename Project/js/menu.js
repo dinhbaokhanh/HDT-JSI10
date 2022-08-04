@@ -65,3 +65,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+const logout = () => {
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("cart");
+    location.reload();
+};
