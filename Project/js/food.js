@@ -5,3 +5,9 @@ document.getElementById("logo-image").addEventListener("click", function () {
 document.getElementById("login-redirect").addEventListener("click", function () {
     window.location.href = '../html/logIn.html'
 })
+
+const logout = () => {
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("cart");
+    location.reload();
+};
