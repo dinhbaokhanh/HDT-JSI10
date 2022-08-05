@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../img/LOGO.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    
+    <div class= "topnav" >
+        
+        <nav>
+
+            <div class="max-width">
+
+                <div class="logo">
+                    <img src="../img/LOGO.png" id="logo-image" alt="">
+                </div>
+
+                <ul class="menu-bar">
+                    <li><a href="../landscape.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+                <div class="user">
+                    <i id="login-redirect" class="account fa-solid fa-arrow-right-from-bracket" onclick="logout()"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="brown-bar"></div>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="title"><h2>Contact</h2></div>
+    <br><br>
+
+    <div class="container">
+        <form>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+      
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject"></input>
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" placeholder="Tell me about the problems"></textarea>
+
+        
+            <input type="submit" value="Done" id="submit">
+      
+        </form>
+    </div>
+
+    <br><br><br>
+
+    <div class="footer">
+        <p>Copyright ©, all rights reserved. No parts of this site may be reprodiced without our written permission.</p>
+        <br>
+        <p> This project was made by Dinh Bao Khanh from HDT-JSI10</p>
+        <br>
+        <div id="google_translate_element"></div>
+    </div>
+
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="../js/contact.js"></script>
+
+</body>
+</html>
