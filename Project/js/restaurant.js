@@ -278,3 +278,8 @@ const logout = () => {
     location.reload();
     window.location.href = '../html/logIn.html'
 };
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

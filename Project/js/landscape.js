@@ -16,3 +16,4 @@ const logout = () => {
     location.reload();
     window.location.href = './html/logIn.html'
 };
+

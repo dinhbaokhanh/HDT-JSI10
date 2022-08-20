@@ -116,3 +116,8 @@ form.addEventListener("submit", (e) => {
       location.href = "./logIn.html";
   }
 });
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
